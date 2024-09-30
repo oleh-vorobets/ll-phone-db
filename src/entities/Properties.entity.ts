@@ -51,7 +51,7 @@ export class PropertyEntity extends BaseEntity {
     })
     timezone!: string;
 
-    @Column('date', { name: 'archive_at', nullable: true })
+    @Column('text', { name: 'archive_at', nullable: true })
     archive_at!: string | null;
 
     @Column('integer', { name: 'noti_incidents', default: false })
