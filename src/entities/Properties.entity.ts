@@ -54,29 +54,29 @@ export class PropertyEntity extends BaseEntity {
     @Column('date', { name: 'archive_at', nullable: true })
     archive_at!: string | null;
 
-    @Column('boolean', { name: 'noti_incidents', default: false })
-    noti_incidents!: boolean;
+    @Column('integer', { name: 'noti_incidents', default: false })
+    noti_incidents!: number;
 
-    @Column('boolean', { name: 'noti_tags', default: false })
-    noti_tags!: boolean;
+    @Column('integer', { name: 'noti_tags', default: false })
+    noti_tags!: number;
 
-    @Column('boolean', { name: 'noti_routes', default: false })
-    noti_routes!: boolean;
+    @Column('integer', { name: 'noti_routes', default: false })
+    noti_routes!: number;
 
-    @Column('boolean', { name: 'show_routes', default: true })
-    show_routes!: boolean;
+    @Column('integer', { name: 'show_routes', default: true })
+    show_routes!: number;
 
-    @Column('boolean', { name: 'show_docs', default: false })
-    show_docs!: boolean;
+    @Column('integer', { name: 'show_docs', default: false })
+    show_docs!: number;
 
-    @Column('boolean', { name: 'show_task', default: true })
-    show_task!: boolean;
+    @Column('integer', { name: 'show_task', default: true })
+    show_task!: number;
 
-    @Column('boolean', { name: 'show_time', default: true })
-    show_time!: boolean;
+    @Column('integer', { name: 'show_time', default: true })
+    show_time!: number;
 
-    @Column('boolean', { name: 'show_incidents', default: true })
-    show_incidents!: boolean;
+    @Column('integer', { name: 'show_incidents', default: true })
+    show_incidents!: number;
 
     @Column('text', { name: 'wt_close_at', nullable: true })
     wt_close_at!: string | null;

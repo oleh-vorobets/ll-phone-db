@@ -35,13 +35,13 @@ export class WorkTimeEntity extends BaseEntity {
     @Column('text', { name: 'end_latitude', nullable: true })
     end_latitude!: string | null;
 
-    @Column('bigint', { name: 'pause_ms', nullable: true })
+    @Column('integer', { name: 'pause_ms', nullable: true })
     pause_ms!: number | null;
 
-    @Column('bigint', { name: 'work_ms', nullable: true })
+    @Column('integer', { name: 'work_ms', nullable: true })
     work_ms!: number | null;
 
-    @Column('bigint', { name: 'total_ms', nullable: true })
+    @Column('integer', { name: 'total_ms', nullable: true })
     total_ms!: number | null;
 
     @ManyToOne(() => PropertyEntity, (properties) => properties.work_times, {

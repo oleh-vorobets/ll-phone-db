@@ -27,8 +27,8 @@ export class RouteTagRelEntity extends BaseEntity {
     @Column('integer', { name: 'tag_id' })
     tag_id!: number;
 
-    @Column('boolean', { name: 'duty', default: false })
-    duty!: boolean;
+    @Column('integer', { name: 'duty', default: false })
+    duty!: number;
 
     @ManyToOne(() => RouteEntity, (routes) => routes.routes_tags_rels, {
         onDelete: 'CASCADE',

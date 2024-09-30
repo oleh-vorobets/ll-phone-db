@@ -36,14 +36,14 @@ export class RouteLogEntity extends BaseEntity {
     @Column('integer', { name: 'attempts_total', default: 0 })
     attempts_total!: number;
 
-    @Column('boolean', { name: 'done', default: false })
-    done!: boolean;
+    @Column('integer', { name: 'done', default: false })
+    done!: number;
 
     @Column('integer', { name: 'property_id' })
     property_id!: number;
 
-    @Column('boolean', { name: 'noti_sended', default: false })
-    noti_sended!: boolean;
+    @Column('integer', { name: 'noti_sended', default: false })
+    noti_sended!: number;
 
     @ManyToOne(() => PropertyEntity, (properties) => properties.routes_logs, {
         onDelete: 'CASCADE',

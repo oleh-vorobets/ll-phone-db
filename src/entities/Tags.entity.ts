@@ -22,8 +22,8 @@ export class TagEntity extends BaseEntity {
     @Column('text', { name: 'name' })
     name!: string;
 
-    @Column('boolean', { name: 'state', nullable: true, default: true })
-    state!: boolean | null;
+    @Column('integer', { name: 'state', nullable: true, default: true })
+    state!: number | null;
 
     @Column('text', { name: 'notes_intern', nullable: true })
     notes_intern!: string | null;
@@ -37,8 +37,8 @@ export class TagEntity extends BaseEntity {
     @Column('integer', { name: 'property_id' })
     property_id!: number;
 
-    @Column('boolean', { name: 'archived', default: false })
-    archived!: boolean;
+    @Column('integer', { name: 'archived', default: false })
+    archived!: number;
 
     @Column('text', {
         name: 'chip_connected_at',
